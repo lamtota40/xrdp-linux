@@ -7,6 +7,8 @@ apt update && apt upgrade -y
 ```
 sudo apt install xfce4 xfce4-goodies -y
 
+echo "startxfce4" > ~/.xsession
+
 step 2:
 ```console
 sudo apt install xrdp unzip wget-y 
