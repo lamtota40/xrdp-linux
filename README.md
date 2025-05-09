@@ -14,3 +14,6 @@ sudo systemctl restart xrdp
 sudo systemctl enable xrdp
 sudo ufw allow 3389/tcp
 ```
+
+# Client XRDP
+https://play.google.com/store/apps/details?id=com.microsoft.rdc.android
