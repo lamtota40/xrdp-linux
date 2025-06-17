@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt install xrdp
 
 declare -A de_map=(
