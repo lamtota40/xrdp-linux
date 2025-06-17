@@ -1,3 +1,4 @@
+sudo apt install xrdp
 echo "startxfce4" > ~/.xsession
 
 sudo chown xrdp:xrdp /etc/xrdp/key.pem
