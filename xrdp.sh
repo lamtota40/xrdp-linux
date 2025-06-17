@@ -28,6 +28,7 @@ if [ "$found" -eq 0 ]; then
   echo "Harap instalasi LXDE, XFCE, GNOME, dll terlebih dahulu."
 fi
 
+sudo cp /etc/xrdp/startwm.sh /etc/xrdp/startwm.sh.bak
 sed -i -e '/\. \/etc\/profile/a unset DBUS_SESSION_ADDRESS' -e '/unset DBUS_SESSION_ADDRESS/a unset XDG_RUNTIME_DIR' /etc/xrdp/startwm.sh
 sed -i 's|^exec /bin/sh /etc/X11/Xsession|#exec /bin/sh /etc/X11/Xsession|' /etc/xrdp/startwm.sh
 sudo chown xrdp:xrdp /etc/xrdp/key.pem
