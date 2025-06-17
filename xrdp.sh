@@ -1,7 +1,7 @@
 sudo apt install xrdp
 echo "startxfce4" > ~/.xsession
 sed -i -e '/\. \/etc\/profile/a unset DBUS_SESSION_ADDRESS' -e '/unset DBUS_SESSION_ADDRESS/a unset XDG_RUNTIME_DIR' /etc/xrdp/startwm.sh
-
+sed -i 's|^exec /bin/sh /etc/X11/Xsession|#exec /bin/sh /etc/X11/Xsession|' /etc/xrdp/startwm.sh
 sudo chown xrdp:xrdp /etc/xrdp/key.pem
 sudo chmod 600 /etc/xrdp/key.pem
 sudo chown xrdp:xrdp /var/run/xrdp
