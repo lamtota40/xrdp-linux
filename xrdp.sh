@@ -37,4 +37,5 @@ sudo chown xrdp:xrdp /var/run/xrdp
 sudo usermod -a -G ssl-cert xrdp
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
+sudo systemctl enable xrdp
 sudo systemctl restart xrdp xrdp-sesman
